@@ -1,0 +1,322 @@
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+.nav-icon, .mobile-navbar {
+	display: none;
+}
+html, body {
+  	overflow-x: hidden;
+  	width: 100%;
+  	font-family: "Lato", sans-serif;
+  	font-size: 16px;
+}
+
+header {
+  	height: 10vh;
+	background-image: linear-gradient(to bottom right, blue, skyblue);
+	font-family: "Gugi", cursive;
+}
+header .nav {
+	display: flex;
+  	flex-direction: row;
+  	justify-content: flex-end;
+  	flex-flow: nowrap;
+  	align-items: center;
+  	padding: 20px 50px 20px 0;
+  	position: fixed;
+  	z-index: 4;
+  	background-image: linear-gradient(to bottom right, blue, skyblue);
+  	width: 100%;
+  	opacity: .8;
+}
+.nav a {
+    padding: 0 40px 0 50px;
+	color: #FFFFFF;
+  	text-decoration: none;
+  	font-size: 1.5vw;
+	margin-top: -5px;
+}
+.nav a:hover {
+  	color: darkblue;
+}
+
+
+
+.container .welcome-sec {
+	background-image: linear-gradient(to bottom right, blue, skyblue);
+  	color: #FFFFFF;
+  	text-align: center;
+  	height: 90vh;
+  	position: relative;
+}
+.welcome-sec .welcome-part {
+  	margin: 0 auto;
+}
+@keyframes sliding-forward {
+	from {transform: translateX(0%);}
+	to {transform: translateX(400%);}
+}
+@keyframes sliding-back {
+	from {transform: translateX(-400%)}
+	to {transform: translateX(0%)}
+}
+.forward {
+	animation: sliding-forward 2s ease-in-out;
+	transform: translateX(-400%);
+}
+.back {
+	animation: sliding-back 2s ease-in-out;
+	transform: translateX(0%);
+}
+
+
+.welcome-part .photo-div .photo{
+  padding: 100px 0 30px 0;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.welcome-part h1 span{
+  font-size: 4vw;
+  font-weight: 700;
+  padding: 0 0 10px 0;
+  font-family: "Gugi", cursive;
+  color: darkblue;
+	font-size: 3vw
+}
+.container .welcome-sec .about {
+  	width: 500px;
+  	text-align: center;
+	margin: -200px auto 0 auto;
+}
+.welcome-sec .not-visible {
+
+	transform:  translateX(-400%);
+}
+.container .welcome-sec .about h2 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: darkblue;
+  padding-bottom: 30px;
+  text-transform: capitalize;
+}
+.container .welcome-sec .contain {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 47%;
+  top: 82%;
+
+}
+.container .welcome-sec .contain .circle {
+  display: block;
+  border-color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.container .welcome-sec .contain .colored {
+  background-color: darkblue;
+}
+.container .welcome-sec .contain .right {
+  margin-left: 10px;
+}
+
+
+
+.container .cv-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 70px 0 70px 0;
+}
+.cv-sec .sec-title h2 {
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+  padding-bottom: 5px;
+  border-bottom-color: darkblue;
+  border-bottom-width: thick;
+  font-size: 30px;
+  border-bottom-style: solid;
+  font-family: "Gugi", cursive;
+  letter-spacing: 2px;
+  width: 170px;
+  margin: 0 auto;
+}
+.cv-container aside{
+    font-size: 1.3em;
+    padding-left: 18vw;
+}
+.cv-container h2 {
+    font-size: 2em;
+    letter-spacing: 0.2%;
+    padding-left: 3.8vw;
+}
+.contact {
+  background-image: linear-gradient(to bottom right, blue, skyblue);
+  padding: 10px 0 20px 0;
+}
+.contact .contact-div {
+  margin: 20px auto;
+  text-align: center;
+  border-style: solid;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  width: 520px;
+  height: 120px;
+  padding: 20px 0 20px 0;
+  box-shadow: 2px 3px #CFCFCF;
+}
+.contact .contact-div h2 {
+  font-size: 2vw;
+  font-family: "Gugi", cursive;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.contact .contact-div p {
+  font-size: 19px;
+  padding-top: 20px;
+  color: darkblue;
+  padding-bottom: 2px;
+  padding-top: 10px;
+  border-bottom-style: dotted;
+  width: 255px;
+  margin: 0 auto;
+  border-bottom-color: darkblue;
+  cursor: pointer;
+  font-size: 25px;
+}
+.contact .social {
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .social a {
+  color: #CFCFCF;
+  padding-left: 25px;
+}
+.contact .social i {
+	font-size: 25px;
+}
+.contact .social a:hover {
+  color: darkblue;
+}
+
+
+
+@media only screen and (max-width: 500px) 
+{
+	header .nav {
+		display: none;
+	}
+	.nav-icon, .mobile-navbar {
+		display: block;
+	}
+	.nav-icon i {
+		font-size: 40px;
+		color: white;
+		float: right;
+		margin: 10px;
+		cursor: pointer;
+	}
+	.menu {
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		opacity: .9;
+		text-align: center;
+		list-style: none;
+		border-radius: 5px;
+		background-image: linear-gradient(to bottom right, blue, skyblue);
+		z-index: 1;
+		height: 99vh;
+	}
+	.close i {
+		font-size: 40px;
+		text-align: right;
+		color: white;
+	}
+	.close {
+		position: absolute;
+		right: 1px;
+		top: 1px;
+		display: none;
+	}
+	.menu li:first-of-type {
+		margin-top: 200px;
+	}
+	.menu li {
+		margin: 40px;
+	}
+	.menu li a {
+		color: white;
+		text-decoration: none;
+		margin: 10px;
+		font-size: 30px;
+	}
+	.menu li a:hover {
+		color: darkblue;
+	}
+	.opened {
+		width: 98%;
+		transition: width 1s ease-in-out;
+	}
+	.closed {
+		width: 0%;
+		transition: width 1s ease-in-out;
+	}
+	.welcome-part h1 {
+		font-size: 40px;
+	}
+	.welcome-part h1 span {
+		font-size: 30px;
+	}
+	.welcome-part p {
+		font-size: 25px;
+	}
+	.container .welcome-sec .contain {
+        left: 45%;
+        top: 90%;
+	}
+	.container .welcome-sec .about {
+		width: 90%;
+	}
+	.container .welcome-sec .about h2 {
+		font-size: 25px;
+    }
+
+    .cv-sec .cv-container h2 {
+        font-size: 1.4em;
+        padding-left: 0.5em;
+    }
+    
+    .cv-sec .cv-container aside {
+        font-size: 0.8em;
+        padding-left:1.4em;        
+    }
+    .cv-sec .cv-container aside a{
+        font-size: x-small;
+        overflow-wrap: break-word;
+        padding-left: 1em;
+    }
+    .contact .contact-div {
+        width: 90%;
+	}
+	.contact .contact-div h2 {
+		font-size: 25px;
+	}
+	.contact .contact-div p {
+		font-size: 20px;
+	}
+}
